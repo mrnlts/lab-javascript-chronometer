@@ -22,20 +22,23 @@ class Chronometer {
   
   twoDigitsNumber() {
     if (this.getMinutes() < 10) {
-      return '0'+this.getMinutes;
+      return '0'+ this.getMinutes();
     } else if (this.getSeconds() < 10) {
-      return '0'+this.getSeconds;
+      return '0'+this.getSeconds();
     } else {
     return (this.getSeconds().toString(), this.getMinutes().toString());
     }
   }
+  
   stopClick() {
     clearInterval(this.intervalId);
   }
-  /*resetClick() {
-    // ... set current time to 0
+  
+  resetClick() {
+    this.currentTime = 0;
   }
+
   splitClick() {
-    // ... copy current [i]? push to new array?
-  }*/
+    return `${this.twoDigitsNumber(this.getMinutes())}:${this.twoDigitsNumber(this.getSeconds())}`;
+  }
 }

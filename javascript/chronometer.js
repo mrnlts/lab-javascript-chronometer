@@ -3,10 +3,13 @@ class Chronometer {
     this.currentTime = 0;
     this.intervalId = 0;
   }
-  startClick(callback) {
-    
+
+  startClick () {
+    const timeOutId = setTimeout(() => this.currentTime++, 1000);
   }
-  
+}
+/*
+  //reset currenttime 0, stop clearinterval
   getMinutes() {
     // ... your code goes here
   }
@@ -26,3 +29,4 @@ class Chronometer {
     // ... your code goes here
   }
 }
+*/

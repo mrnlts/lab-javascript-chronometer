@@ -5,29 +5,27 @@ class Chronometer {
   }
 
   startClick () {
-    const timeOutId = setInterval(() => {this.currentTime++}, 1000);
+    this.intervalId = setInterval(() => {this.currentTime++}, 1000);
+  }
 
-  }
-}
-/*
-  //reset currenttime 0, stop clearinterval
   getMinutes() {
-    // ... your code goes here
+    return Math.floor(this.currentTime/60);
   }
+
   getSeconds() {
     // ... your code goes here
   }
-  twoDigitsNumber() {
+  
+  /*twoDigitsNumber() {
     // ... your code goes here
   }
   stopClick() {
-    // ... your code goes here
+    // ... clear interval
   }
   resetClick() {
-    // ... your code goes here
+    // ... set current time to 0
   }
   splitClick() {
-    // ... your code goes here
-  }
+    // ... copy current [i]? push to new array?
+  }*/
 }
-*/

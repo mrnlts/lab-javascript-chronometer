@@ -5,7 +5,8 @@ class Chronometer {
   }
 
   startClick () {
-    const timeOutId = setTimeout(() => this.currentTime++, 1000);
+    const timeOutId = setInterval(() => {this.currentTime++}, 1000);
+
   }
 }
 /*

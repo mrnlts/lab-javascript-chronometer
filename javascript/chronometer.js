@@ -18,16 +18,21 @@ class Chronometer {
     } else {
       return this.currentTime-60;
     }
-    
   }
   
-  /*twoDigitsNumber() {
-    // ... your code goes here
+  twoDigitsNumber() {
+    if (this.getMinutes() < 10) {
+      return '0'+this.getMinutes;
+    } else if (this.getSeconds() < 10) {
+      return '0'+this.getSeconds;
+    } else {
+    return (this.getSeconds().toString(), this.getMinutes().toString());
+    }
   }
-  stopClick() {
+  /*stopClick() {
     // ... clear interval
   }
-  resetClick() {
+  /*resetClick() {
     // ... set current time to 0
   }
   splitClick() {

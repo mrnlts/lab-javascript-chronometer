@@ -29,8 +29,8 @@ class Chronometer {
     return (this.getSeconds().toString(), this.getMinutes().toString());
     }
   }
-  /*stopClick() {
-    // ... clear interval
+  stopClick() {
+    clearInterval(this.intervalId);
   }
   /*resetClick() {
     // ... set current time to 0

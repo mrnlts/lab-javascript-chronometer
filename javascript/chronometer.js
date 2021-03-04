@@ -20,13 +20,11 @@ class Chronometer {
     }
   }
   
-  twoDigitsNumber() {
-    if (this.getMinutes() < 10) {
-      return '0'+ this.getMinutes();
-    } else if (this.getSeconds() < 10) {
-      return '0'+this.getSeconds();
+  twoDigitsNumber(input) {
+    if (input < 10) {
+      return '0'+ input;
     } else {
-    return (this.getSeconds().toString(), this.getMinutes().toString());
+    return input.toString();
     }
   }
   
